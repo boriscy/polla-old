@@ -1,0 +1,26 @@
+<mockup version="1.0" skin="sketch" measuredW="1140" measuredH="853" mockupW="1130" mockupH="843">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="224" y="0" w="686" h="107" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>6710886</color>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="1" w="1130" h="842" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>13158600</color>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="224" y="101" w="686" h="406" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::MenuBar" x="224" y="101" w="686" h="29" measuredW="573" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Inicio%2C%20Puntaje%2C%20Capitanes%2C%20Octavos%20de%20Final%2C%20Campeones%2C%20Ranking%2C%20Reglas</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
