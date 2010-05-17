@@ -17,9 +17,9 @@
         <borderStyle>none</borderStyle>
       </controlProperties>
     </control>
-    <control controlID="4" controlTypeID="com.balsamiq.mockups::MenuBar" x="224" y="101" w="686" h="29" measuredW="573" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::MenuBar" x="224" y="101" w="686" h="29" measuredW="618" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Inicio%2C%20Puntaje%2C%20Capitanes%2C%20Octavos%20de%20Final%2C%20Campeones%2C%20Ranking%2C%20Reglas</text>
+        <text>Inicio%2C%20Puntaje%2C%20Campeones%2C%20Capitanes%2C%20Clasificados%20%288vo.%20final%29%2C%20Ranking%2C%20Reglas</text>
       </controlProperties>
     </control>
   </controls>

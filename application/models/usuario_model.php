@@ -3,11 +3,6 @@ include_once('base_model.php');
 
 class Usuario_model extends Base_model
 {
-  public $tipos = array('admin' => 'Administrador',
-      'adm' => 'Administrativo',
-      'director' => 'Director',
-      'profe' => 'Profesor',
-    );
   /**
    * Constructor donde se define la tabla y los campos
    */
@@ -17,20 +12,6 @@ class Usuario_model extends Base_model
       'paterno', 'materno', 'login', 'password', 'email', 'tipo');
   }
 
-  /**
-   * Recupera todos los datos necesarios de un usuario
-   * @param $id
-   * @return array
-   */
-  public function getId($id) {
-    $ret = parent::getId($id);
-    $materias = $this->db->get_where('materias_usuarios', array('usuario_id' => $ret['id']) );
-    $materias = $materias->result_array();
-    $ret['materias'] = array();
-    foreach($materias as $k => $v)
-      $ret['materias'][] = $v['materia_id'];
-    return $ret;
-  }
 
   /**
    * Compara el password

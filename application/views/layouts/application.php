@@ -5,7 +5,7 @@
 	<title>Polla mundialista del Super pollón marfileño</title>
 
   <link rel="stylesheet" href="<?php echo base_url();?>system/css/style.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="<?php echo base_url() ?>system/javascript/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
 </head>
 <body>

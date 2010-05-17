@@ -1,6 +1,6 @@
 body{
   font-family: Lucida Grande, Verdana, Sans-serif;
-  font-size: 0.80em;
+  font-size: 1em;
   padding: 0px;
   margin: 0px;
   background-color: #D6D6D6;
@@ -14,7 +14,7 @@ body{
 }
 
 #header{
-  height: 150px;
+  height: 120px;
 }
 
 #cont{
@@ -88,7 +88,24 @@ body{
   font-size: 1.2em;
 }
 
+
 /*************************************************/
+/*dashborad*/
+div.campeones{
+  margin: 10px 0px;
+  font-size: 1.2em;
+}
+
+div.campeones a{
+  font-weight: bold;
+}
+
+.tit{
+  background-color: #DFDFDF;
+  padding: 4px;
+}
+
+
 
 label{
   color: ##383838;
@@ -114,7 +131,7 @@ form quote{
 }
 
 input[type=submit], button{
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 input[type=checkbox]{
@@ -169,22 +186,8 @@ a.new:hover{
   text-decoration: underline;
 }
 
-a.import{
-  font-weight: bold;
-  background: transparent url(images/page_excel.png) no-repeat;
-  padding-left: 20px;
-  color: #28256A;
-  text-decoration: none;
-  font-size: 1.2em;
-}
 a.import:hover{
   text-decoration: underline;
-}
-
-a.curso{
-  background: transparent url(images/group_add.png) no-repeat;
-  padding-left: 20px;
-  font-weight: bold;
 }
 
 
@@ -268,4 +271,35 @@ ul.half li{
   width: 32px;
   height: 32px;
   background-image: url(images/ajax-loader.gif);
+}
+
+.grupo{
+  width: 24%;
+  float: left;
+  height: 170px;
+  font-size: 0.9em;
+}
+.grupo ul{
+  margin: 0px;
+  padding: 0px;
+}
+.grupo ul li{
+  list-style: none;
+}
+
+.grupo label{
+  font-weight: normal;
+}
+.grupo img{
+  border: 1px solid #616161;
+}
+
+blockquote{
+  color: #616161;
+  margin: 0px;
+  padding: 3px 0px;
+}
+
+#goleador img{
+  border: 1px solid #616161;
 }

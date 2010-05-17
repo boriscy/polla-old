@@ -9,10 +9,6 @@ class Base extends Controller
   }
 
 
-  // Variable que almacena las credenciales de la siguiente forma
-  // $credentials['index'] = array('admin', 'profe', 'editor'); // 'admin', 'profe' y 'editor' tienen permiso
-  // $credentials['edit'] = array('admin'); # Solo el administrador tiene permiso
-  protected $credentials;
   /**
    * Retorna el controlador y la acción
    * @return array
@@ -28,19 +24,9 @@ class Base extends Controller
   /**
    * Funcion principal para los permisos
    */
-  protected function checkCredentials() {
-    if(!$this->session->userdata('usuario_id')) {
+  protected function checkUser() {
+    if(!$this->session->userdata("usuario_id")) {
       redirect("/login");
-    }else{
-      list($controller, $action) = $this->getUri();
-
-      if(!isset($this->credentials[$action])) {
-        die("Error: you did not set credentals in your controller for \"$action\"");
-      }
-      if( !in_array($this->session->userdata('usuario_tipo'), $this->credentials[$action] ) ) {
-        $this->session->set_flashdata('warning', 'Usted no tiene permiso para acceder esta área');
-        redirect("/login/access");
-      }
     }
   }
 }

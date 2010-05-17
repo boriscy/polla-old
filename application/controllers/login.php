@@ -10,14 +10,13 @@ class Login extends Controller
   /**
    * Funcion para loguearse
    */
-  function index() {
+  public function index() {
     if($this->session->userdata('usuario_id') ) {
-      redirect("/login/access");
+      redirect("/dashboard");
     }
 
     if(isset($_POST['email']) && isset($_POST['password']) ) {
       if($usuario = $this->Usuario_model->buscar_email_password($_POST['email'], $_POST['password'])) {
-        $usuario = $this->Usuario_model->findByField('email', $_POST['email']);
         $this->session->set_userdata( array(
           'usuario_nombre' => $usuario->nombre, 
           'usuario_id' => $usuario->id,
@@ -25,6 +24,7 @@ class Login extends Controller
           )
         );
         $this->session->set_flashdata('notice', "Usted a ingresado correctamente");
+        redirect("/dashboard");
       }else{
         $this->session->set_flashdata('error', "Usted a ingresado un usuario o contraseña inválidos");
       }
@@ -32,6 +32,7 @@ class Login extends Controller
     $data['template'] = 'login/index';
     $this->load->view('layouts/application', $data);
   }
+
 
   /**
    * Funcion para desloguearse
@@ -41,15 +42,5 @@ class Login extends Controller
     redirect("/login");
   }
 
-  /**
-   * Funcion de acceso una ves logueado
-   */
-  function access() {
-    if(!$this->session->userdata('usuario_id') ) {
-      redirect("/login");
-    }
-    $data['template'] = 'login/access';
-    $this->load->view('layouts/application', $data);
-  }
 
 }

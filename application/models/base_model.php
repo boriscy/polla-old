@@ -82,7 +82,7 @@ class Base_model extends Model
    */
   function getId($id) {
     $q = $this->db->get_where($this->table, array('id' => $id), 1, 0);
-    return $q->row_array();
+    return $q->row();
   }
 
   /**

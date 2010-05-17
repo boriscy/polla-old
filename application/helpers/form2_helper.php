@@ -154,7 +154,7 @@ if(!function_exists('select'))
 
     $html = '<div class="input">';
     $html.= "<label>$label</label>";
-    $html.= "<select name=\"$name\">";
+    $html.= "<select name=\"$name\" id=\"$name\">";
     if(trim($value) == '')
       $value = get_form_value($name);
 
@@ -399,4 +399,12 @@ class Form2Helper
     return join($html, ' ');
   }
 
+}
+
+if(!function_exists('img')) {
+  function img($src, $options = array() ) {
+    $src = base_url() . 'system/images/' . $src;
+
+    return "<img src='$src' />";
+  }
 }
